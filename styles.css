@@ -223,6 +223,9 @@ flex-basis: 730px;
 .feature-img img{
     width: 100%;
     background-image: url(./assets/asset\ 19.svg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 .feature-desc{
