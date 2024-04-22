@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usability Hub | User Reasearch & Usability Testing Platform</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media-queries.css">
     <link rel="shortcut icon" href="assets/asset 24.png" type="image/x-icon">
 </head>
 <body>
@@ -20,7 +21,7 @@
             <a  href = "#" class="company-logo">
                 <img src="./assets/asset 0.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex ul">
                     <li><a href="#" class="hover-links">Products</a></li>
                     <li><a href="#" class="hover-links">Customers</a></li>
@@ -30,6 +31,9 @@
                     <li><a href="#" class="hover-links primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-links" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+            <!-- Close icon -->
+            <a href="#" class="nav-close hover-links" id="nav-close"><i class="fa-solid fa-times"></i></a>
         </div>
     </nav>
     <!-- Hero Section -->
@@ -110,7 +114,7 @@
     </section>
     <!-- Big Feature Section -->
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="first-big-feature">
             <div class="feature-img">
                 <img src="./assets/asset 15.png" alt="feature image">
             </div>
@@ -136,7 +140,7 @@
     </section>
     <!-- Big Feature Section -->
     <section class="big-feature-section">
-        <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+        <div class="container flex big-feature-container" id="third-big-feature">
             <div class="feature-desc flex">
                 <h4>Easier decision making for</h4>
                 <h3>Product managers</h3>
@@ -223,5 +227,6 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/84eb8f2b89.js" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
 </body>
 </html>

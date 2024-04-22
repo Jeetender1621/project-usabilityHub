@@ -55,6 +55,7 @@ a{
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--pading-inline-section);
+    overflow: hidden;
 }
 
 .flex{
@@ -82,6 +83,7 @@ a{
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.25s ease-out;
+    text-align: center;
 }
 
 .primary-button:hover{
@@ -124,12 +126,19 @@ a{
 }
 
 .nav-links{
-flex-basis: 730px;
+    flex-basis: 730px;
 }
 
 .nav-links ul{
     justify-content: end;
     gap:40px;
+}
+.nav-toggle{
+    display: none;
+}
+
+.nav-close{
+    display: none;
 }
 
 /* Header Section */
@@ -171,7 +180,7 @@ flex-basis: 730px;
     gap: 20px;
 }
 .logo {
-    height: 46px;
+    height: 42px;
 }
 
 
@@ -219,6 +228,9 @@ flex-basis: 730px;
 .big-feature-container{
     gap:30px
 }
+ #third-big-feature{
+    flex-direction: row-reverse;
+ }
 
 .feature-img img{
     width: 100%;
@@ -236,19 +248,25 @@ flex-basis: 730px;
 
 /* Examples Section */
 
+.examples-section{
+    padding: 80px var(--pading-inline-section);
+}
 .examples-header{
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 .examples-area{
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
+    gap:20px
 }
 
 .examples-card{
     width: 23%;
     position: relative;
-    min-height: 350px;
+    height: 350px;
     background: black;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(./assets/asset\ 20.jpeg);
     background-size: cover;
